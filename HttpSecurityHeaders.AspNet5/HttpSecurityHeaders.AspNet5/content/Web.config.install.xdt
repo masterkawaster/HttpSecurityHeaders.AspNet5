@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0"?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+	<appSettings xdt:Transform="Insert">
+		<!--HTTP Public Key Pinning – HPKP-->
+		<!--public-key-sha256-base64-->
+		<add key="CertPrimaryHash" value="" />
+		<!--public-key-sha256-base64-->
+		<add key="CertSecondaryHash" value="" />
+		<add key="ExpireTime" value="60" />
+		<add key="ReportUri" value="" />
+	</appSettings>
   <system.web>
 		<customErrors mode="RemoteOnly" defaultRedirect="~/ErrorPages/error" xdt:Transform="Replace">
 			<error statusCode="404" redirect="~/ErrorPages/404" />
@@ -11,5 +20,8 @@
 				<remove name="X-Powered-By" />
 			</customHeaders>
 		</httpProtocol>
+		<modules>
+			<add name="HpkpModule" type="HttpSecurityHeaders.AspNet5.HpkpModule" xdt:Transform="Insert" />
+		</modules>
 	</system.webServer>
 </configuration>

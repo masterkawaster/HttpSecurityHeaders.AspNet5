@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>HttpSecurityHeaders.MVC</id>
+    <id>HttpSecurityHeaders.AspNet5</id>
     <version>0.0.2</version>
-    <title>HttpSecurityHeaders.MVC</title>
+    <title>HttpSecurityHeaders.AspNet5</title>
     <authors>masterkawaster</authors>
     <owners>masterkawaster</owners>
     <description>
@@ -29,6 +29,7 @@
 		<file src="content\Views\ErrorPages\404.html" target="content\Views\ErrorPages\" />
 		<file src="content\Views\ErrorPages\error.html" target="content\Views\ErrorPages\" />
 		<file src="content\Controllers\ErrorPagesController.cs" target="content\Controllers\" />
-		<file src="content\Web.Release.config.transform" target="content\" />
+		<file src="content\Web.config.install.xdt" target="content\" />
+		<file src="content\App_Code\HpkpModule.cs" target="content\App_Code\" />
 	</files>
 </package>

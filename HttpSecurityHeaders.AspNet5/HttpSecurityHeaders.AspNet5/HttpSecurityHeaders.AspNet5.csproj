@@ -54,10 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="content\Controllers\ErrorPagesController.cs" />
+    <None Include="content\App_Code\HpkpModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="content\Web.Release.config.transform" />
+    <None Include="content\Web.config.install.xdt" />
     <None Include="NuGetPackage.ps1" />
     <None Include="NuGetSetup.ps1" />
     <None Include="NuGet.exe" />
