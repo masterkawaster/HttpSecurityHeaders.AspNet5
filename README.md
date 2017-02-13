@@ -1,4 +1,4 @@
-# HttpSecurityHeaders.MVC
+# HttpSecurityHeaders.AspNet5
 
 v0.0.1
 ?Features:
